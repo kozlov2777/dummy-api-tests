@@ -16,7 +16,7 @@ pipeline {
             steps {
                 bat '''
                     cd tests
-                    allure.bat generate allure-results -o allure-report --clean
+                    pytest --alluredir=allure-results
                 '''
             }
         }
