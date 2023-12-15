@@ -16,9 +16,19 @@ pipeline {
             steps {
                 bat '''
                     cd tests
-                    pytest --alluredir=allure-results
+                    allure.bat generate allure-results -o allure-report --clean
                 '''
+            }
+        }
+        stage('publish report') {
+            steps {
+                allure([
+                    includeProperties: false, 
+                    jdk: '', 
+                    results: [[path: 'tests/allure-results']]
+                ])
             }
         }
     }
 }
+
