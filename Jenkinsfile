@@ -12,7 +12,7 @@ pipeline {
                 bat 'pip install -r requirements.txt'
             }
         }
-       stage('start tests') {
+        stage('start tests') {
             steps {
                 script {
                     try {
@@ -25,6 +25,7 @@ pipeline {
                     }
                 }
             }
+        }
         stage('publish report') {
             steps {
                 allure([
@@ -36,4 +37,3 @@ pipeline {
         }
     }
 }
-
