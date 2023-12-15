@@ -2,7 +2,8 @@
 API: https://dummyapi.io
 
 # Report
-![image](https://github.com/kozlov2777/dummy-api-tests/assets/74189473/6005f3b7-9a9a-4ecc-a827-7e35465cd5d9)
+![изображение_2023-12-15_144300531](https://github.com/kozlov2777/dummy-api-tests/assets/74189473/fc9b843f-7713-4765-b066-472e32861bf9)
+
 
 # Tools:
 
