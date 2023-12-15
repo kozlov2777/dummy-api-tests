@@ -2,19 +2,19 @@ pipeline {
     agent any
 
     stages {
-        stage('version') {
+        stage('Python') {
             steps {
-                sh 'python3 --version'
+                bat 'python3 --version'
             }
         }
         stage('requirements') {
             steps {
-                sh 'pip install -r requirements.txt'
+                bat 'pip install -r requirements.txt'
             }
         }
         stage('start tests') {
             steps {
-                sh '''
+                bat '''
                     cd tests
                     pytest --alluredir=allure-results
                 '''
